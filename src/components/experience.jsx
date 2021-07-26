@@ -1,27 +1,49 @@
 import React, { Component } from "react";
+import "./experience.css";
 
 class Experience extends Component {
-  state = {
-    company: this.props.company, // Company name
-    title: this.props.title, // Job experience title
-    description: this.props.description, // Description of the job
-    stack: this.props.stack // Technical stack
-  };
   render() {
     return (
-      <div>
-        <h3 className="experienceTitle">
-          {this.state.title} at {this.state.company}
-        </h3>
-        <p className="experienceDescription">{this.state.description}</p>
-        <p className="experienceStack">Technical stack:</p>
-        <ul>
-          {this.state.stack.map(item => (
-            <li className="experienceStack" key={item}>
-              {item}
-            </li>
-          ))}
-        </ul>
+      <div className="card experience my-2">
+        <h4 className="card-header">
+          {this.props.experience.title} | {this.props.experience.dates}
+        </h4>
+        <div className="card-body">
+          <h5 className="card-title">{this.props.experience.company}</h5>
+          <p className="card-text">{this.props.experience.description}</p>
+          {this.props.experience.deliverables && (
+            <React.Fragment>
+              <ul>
+                {this.props.experience.deliverables.map(item => (
+                  <li className="experienceStack" key={item}>
+                    {item.title} : {item.description}{" "}
+                    {item.website && (
+                      <a href={item.website} rel="noreferrer">
+                        {item.website}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </React.Fragment>
+          )}
+          {this.props.experience.stack && (
+            <React.Fragment>
+              <h5 className="card-title">Technical stack:</h5>
+              <p>
+                {this.props.experience.stack.map(item => (
+                  <span>
+                    {item}
+                    {item !==
+                      this.props.experience.stack[
+                        this.props.experience.stack.length - 1
+                      ] && ", "}
+                  </span>
+                ))}
+              </p>
+            </React.Fragment>
+          )}
+        </div>
       </div>
     );
   }

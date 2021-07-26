@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "./navbar";
 
 class Header extends Component {
   state = {
@@ -7,10 +8,13 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="App-header">
-        <img src={this.state.imgPath} className="App-logo mx-5" />
-        <h1>Maxime WATTEZ CV</h1>
-      </header>
+      <React.Fragment>
+        <header className="App-header mx-auto">
+          <img src={this.state.imgPath} className="App-logo mx-5" />
+          <h1>Maxime WATTEZ CV</h1>
+        </header>
+        <Navbar onChangeContent={this.props.onChangeContent} />
+      </React.Fragment>
     );
   }
 }

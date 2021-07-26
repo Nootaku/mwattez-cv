@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "title": "Project Manager (China, Beijing)",
+    "dates": "2011 – 2012",
+    "company": "Digital Jungle - Social Media Marketing",
+    "description": "Data research, data analysis and reporting within the Research and Insights department. I have also worked on the new Logo design."
+  },
+  {
+    "id": 2,
+    "title": "Project Manager",
+    "dates": "2015 – 2017",
+    "company": "Culture Lab - Cultural Project Management",
+    "description": "Administrative and financial data management including follow-up and control of multi-annual cultural cooperation projects subsidised by the European Commission."
+  },
+  {
+    "id": 3,
+    "title": "Web Developer",
+    "dates": "2015 – 2017",
+    "company": "Freelance Web Development",
+    "description": "Design and creation of the websites based on existing specifications",
+    "deliverables": [
+      {
+        "title": "EC-sponsored project CHEurope",
+        "website": "http://www.cheurope-project.eu"
+      },
+      {
+        "title": "Cultual projectmanagement company Culture Lab",
+        "website": "https://www.culturelab.be"
+      },
+      {
+        "title": "Belgian tourism company SEGWAYNAM.sprl",
+        "website": "http://www.segwaynam.be"
+      }
+    ],
+    "stack": ["HTML5", "CSS3", "JQuery", "PHP", "Wordpress"]
+  },
+  {
+    "id": 4,
+    "title": "Business Support",
+    "dates": "2017 – 2018",
+    "company": "MetiSelect - HR Project Sourcing for Business Support",
+    "description": "Working as an external consultant for business support.",
+    "deliverables": [
+      {
+        "title": "Reckitt Benckiser (2018)",
+        "description": "Creation, control and migration of the product database from JDE to SAP."
+      },
+      {
+        "title": "Ahooga (2018)",
+        "description": "Design of a Business Intelligence reporting system."
+      },
+      {
+        "title": "Frutarom (2017)",
+        "description": "CSO & Internal Sales for the BeNeLux and French market as well as backup for the Asian market"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Python Software Developer",
+    "dates": "2019",
+    "company": "Freelance Software Developer",
+    "description": "Creation of custom software and API integrations. Analysis of client needs, development and automation of business logic and creation of GUI.",
+    "stack": [
+      "Python3",
+      "Pandas",
+      "Flask",
+      "Numpy",
+      "PyTest",
+      "OAuth2",
+      "SQLite"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Full Stack Developer Consultant",
+    "dates": "2020 - Present",
+    "company": "Degetel - Technological Consultancy Company",
+    "description": "Consultancy on multiple missions.",
+    "deliverables": [
+      {
+        "title": "Phileas",
+        "description": "Project using Machine Learning applied to IoT networks aimed at Preventive Security. I helped create and ship a custom application using ML to monitor IoT networks through anomaly detection.",
+        "website": "https://phileas.ai/"
+      },
+      {
+        "title": "Itinari",
+        "description": "As a front-end developer, I am responsible for the front-end of the “Live Stories” service (incl. payment system) on ",
+        "website": "https://www.itinari.com/"
+      },
+      {
+        "title": "Ericsson",
+        "description": "As a Python developer for Ericsson's internal tooling team, I have writen automation scripts for multiple teams and projects."
+      },
+      {
+        "title": "Robocloud",
+        "description": "R&D project with the aim of connecting agricultural robots to the cloud to allow both control at distance and monitoring of the tasks. Conversion of data from .blf and/or .asc log-files to .json format as well as for the cleansing and strorage of the data-models on influxDB and AWS S3 buckets."
+      },
+      {
+        "title": "Laborelec",
+        "description": "As a Python developer for Engie Laborelec's internal software team I was responsible for the maintenance of code, debugging, new features and scripting as well as unit testing of the provided code."
+      }
+    ],
+    "stack": [
+      "Python3",
+      "pyTest",
+      "unittest",
+      "Flask",
+      "pandas",
+      "Numpy",
+      "Tensorflow",
+      "Keras",
+      "MongoDB",
+      "SQLite",
+      "OracleDB",
+      "influxDB",
+      "grafana",
+      "Elasticsearch",
+      "GraphQL",
+      "Terraform",
+      "Ansible",
+      "Docker",
+      "git",
+      "GitHub",
+      "GitLab",
+      "node.js",
+      "Vue.js",
+      "Typescript"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+.navbar-element {
+  background-color: #4f596d;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-item {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  color: #ededed;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+.nav-button:hover {
+  color: #0d6efd;
+}
+
+.active {
+  border-bottom: 1px solid #ededed;
+}

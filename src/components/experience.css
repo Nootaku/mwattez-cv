@@ -1,0 +1,12 @@
+.experience {
+}
+
+.experience .card-header {
+  background-color: #d0d3d6;
+}
+
+.card-title {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
