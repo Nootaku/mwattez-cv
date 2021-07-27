@@ -8,6 +8,7 @@ import MainContent from "./components/mainContent";
 import About from "./components/about";
 import Experiences from "./components/experiences";
 import Skillset from "./components/skillset";
+import Footer from "./components/footer";
 
 class App extends Component {
   state = {
@@ -31,6 +32,7 @@ class App extends Component {
         <main className="App-content container my-4">
           <MainContent content={this.state.mainContent} />
         </main>
+        <Footer />
       </React.Fragment>
     );
   }

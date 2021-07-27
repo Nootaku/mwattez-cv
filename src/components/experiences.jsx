@@ -8,6 +8,8 @@ class Experiences extends Component {
   };
 
   render() {
+    const { experiences } = this.state;
+
     return (
       <div>
         <p>
@@ -17,7 +19,7 @@ class Experiences extends Component {
           </a>{" "}
           to download a pdf-version of my CV.
         </p>
-        {this.state.experiences.reverse().map(xp => (
+        {experiences.reverse().map(xp => (
           <Experience key={xp.id} experience={xp} />
         ))}
       </div>

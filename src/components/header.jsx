@@ -7,14 +7,11 @@ class Header extends Component {
   };
 
   render() {
+    const { imgPath } = this.state;
     return (
       <React.Fragment>
         <header className="App-header mx-auto">
-          <img
-            src={this.state.imgPath}
-            className="App-logo mx-5"
-            alt="Profile"
-          />
+          <img src={imgPath} className="App-logo mx-5" alt="Profile" />
           <h1>Maxime WATTEZ</h1>
         </header>
         <Navbar onChangeContent={this.props.onChangeContent} />
