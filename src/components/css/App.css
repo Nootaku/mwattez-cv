@@ -1,8 +1,3 @@
-.App {
-  max-width: 100vw;
-  overflow: hidden;
-}
-
 .App-logo {
   display: none;
   width: 150px;
@@ -19,6 +14,18 @@
 }
 
 .App-content {
+}
+
+.downloadPDF {
+  background-color: transparent;
+  border: 1px solid #777777;
+  border-radius: 5px;
+  min-width: 55px;
+  margin: auto 8px;
+}
+.downloadPDF:hover {
+  background-color: #777777;
+  color: #dddddd;
 }
 
 /* Tablets */

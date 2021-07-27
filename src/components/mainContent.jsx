@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import About from "./about";
-import Experiences from "./experiences";
+import { Component } from "react";
 
 class MainContent extends Component {
   render() {

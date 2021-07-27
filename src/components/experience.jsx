@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./experience.css";
+import "./css/experience.css";
 
 class Experience extends Component {
   render() {
@@ -14,8 +14,11 @@ class Experience extends Component {
           {this.props.experience.deliverables && (
             <React.Fragment>
               <ul>
-                {this.props.experience.deliverables.map(item => (
-                  <li className="experienceStack" key={item}>
+                {this.props.experience.deliverables.map((item, index) => (
+                  <li
+                    className="experienceStack"
+                    key={this.props.experience.id + ".deliverable." + index}
+                  >
                     {item.title} : {item.description}{" "}
                     {item.website && (
                       <a href={item.website} rel="noreferrer">
@@ -31,8 +34,8 @@ class Experience extends Component {
             <React.Fragment>
               <h5 className="card-title">Technical stack:</h5>
               <p>
-                {this.props.experience.stack.map(item => (
-                  <span>
+                {this.props.experience.stack.map((item, index) => (
+                  <span key={this.props.experience.id + ".stack." + index}>
                     {item}
                     {item !==
                       this.props.experience.stack[

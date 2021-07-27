@@ -1,0 +1,11 @@
+.card-header {
+  background-color: #d0d3d6 !important;
+}
+.starred-item {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+.star {
+  max-width: 18px;
+}

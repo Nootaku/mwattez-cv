@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import pic from "./picture.png";
-import "./App.css";
+import "./components/css/App.css";
 
 // Components
 import Header from "./components/header";
@@ -26,12 +26,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <React.Fragment>
         <Header imgPath={pic} onChangeContent={this.handleChangeContent} />
         <main className="App-content container my-4">
           <MainContent content={this.state.mainContent} />
         </main>
-      </div>
+      </React.Fragment>
     );
   }
 }

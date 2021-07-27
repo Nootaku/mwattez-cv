@@ -1,8 +1,8 @@
-import "./navbar.css";
+import "./css/navbar.css";
 
 // Stateless Functional Component
 const Navbar = props => (
-  <nav className="navbar-element">
+  <nav className="navbar-element position-sticky sticky-top">
     <div className="" id="navbarNav">
       <ul className="navbar-item">
         <li className="nav-item">
