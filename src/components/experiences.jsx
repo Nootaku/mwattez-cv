@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Experience from "./experience";
-import experienceList from "./experiences.json";
+import experienceList from "./data/experiences.json";
 
 class Experiences extends Component {
   state = {

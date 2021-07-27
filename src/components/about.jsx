@@ -1,6 +1,7 @@
 import phone from "./images/phone.png";
 import email from "./images/email.png";
 import address from "./images/address.png";
+import contactInfo from "./data/contact.json";
 import "./css/about.css";
 
 // Stateless Functional Component
@@ -12,18 +13,18 @@ const About = () => (
           <h5 className="card-title">Contact information</h5>
           <div className="card-text contact-wrapper">
             <img src={phone} className="contactLogo" alt="Phone logo" />
-            <p className="card-text mx-3">0497 65 89 64</p>
+            <p className="card-text mx-3">{contactInfo.phone}</p>
           </div>
           <div className="card-text contact-wrapper">
             <img src={email} className="contactLogo" alt="Phone logo" />
-            <p className="card-text mx-3">max.wattez@protonmail.com</p>
+            <p className="card-text mx-3">{contactInfo.email}</p>
           </div>
           <div className="card-text contact-wrapper">
             <img src={address} className="contactLogo" alt="Phone logo" />
             <p className="card-text mx-3">
-              Rue du Marché, 46
+              {contactInfo.address1}
               <br />
-              1210 - Brussels
+              {contactInfo.address2}
             </p>
           </div>
         </div>
