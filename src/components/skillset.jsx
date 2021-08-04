@@ -64,7 +64,7 @@ const Skillset = () => (
     </div>
     <div className="col-sm-3">
       <div className="card mb-3">
-        <div className="card-header">Development</div>
+        <div className="card-header">Technical Stack</div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
             DevOps:

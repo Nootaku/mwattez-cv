@@ -56,6 +56,16 @@
   margin: auto 21px;
 }
 
+.underline {
+  text-decoration: underline;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+
 /* Tablets */
 @media screen and (min-width: 768px) {
   .App-logo {

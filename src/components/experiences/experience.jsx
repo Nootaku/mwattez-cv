@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ExperienceTitle from "./experienceTitle";
 import ExperienceBody from "./experienceBody";
-import "./css/experience.css";
+import "../css/experience.css";
 
 class Experience extends Component {
   constructor(props) {

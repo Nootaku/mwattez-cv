@@ -1,0 +1,54 @@
+{
+  "education": {
+    "university": {
+      "masters": {
+        "name": "Cultural Management",
+        "university": "Université Libre de Bruxelles",
+        "year": 2015
+      },
+      "bachelor": {
+        "name": "Translation English-Chinese",
+        "university": "Institut Libre Marie-Haps",
+        "year": 2011
+      }
+    },
+    "non_univerity": {
+      "exchange": [
+        {
+          "id": "exchange_0",
+          "university": "Cardiff University (UK)",
+          "start": 2010,
+          "end": 2011,
+          "duration": "6 months"
+        },
+        {
+          "id": "exchange_1",
+          "university": "Beijing Foreign Language University (China)",
+          "start": 2009,
+          "end": 2010,
+          "duration": "6 months"
+        }
+      ],
+      "other": [
+        {
+          "id": "other_0",
+          "university": "Yoshida Institute of Japanese Language (Japan)",
+          "start": 2019,
+          "end": 2019,
+          "duration": "6 months"
+        }
+      ]
+    }
+  },
+
+  "professional_profile": [
+    "I am an organized, creative and solution oriented python developer who believes that process optimization is the key to an efficient business.",
+    "After having worked with data for several years in different sectors (CSO, Project Management, Data Cleansing), I have decided to devote myself to software development. My prior experiences helped me acquire an analytical mindset and allows me to better understand the needs and professional habits of clients.",
+    "Being very keen on learning, I love to undertake custom client-projects."
+  ],
+  "whoami": [
+    "I am a musician. I play bass, piano and I sing. Also I compose my own songs. Over the years I've been building and playing in a lot of bands which I thoroughly enjoy.",
+    "I love sports. My favorite: rock-climbing. I'm climbing at least once a week, but preferably two. I feel really attracted by the mental challenges that you need to overcome in order to climb some routes.",
+    "I am a rolist. In other words, I play tabletop RPGs with friends. I take turns being a player and a GM. I find it very interesting to be able to play a game where your actions are only limited by your own imagination. Very often it requires some serious puzzling and social skills to complete a campaign."
+  ]
+}
