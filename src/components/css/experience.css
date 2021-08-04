@@ -5,8 +5,34 @@
   background-color: #d0d3d6;
 }
 
+.experience-body {
+  display: block;
+}
+.experience-title-dates::before {
+  content: "\A";
+  white-space: pre;
+}
 .card-title {
   font-size: 18px;
   font-style: italic;
   font-weight: bold;
+}
+
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+}
+
+/* Laptops */
+@media screen and (min-width: 992px) {
+  .experience-body {
+    display: block;
+  }
+  .experience-title-dates::before {
+    content: " | ";
+  }
+}
+
+/* Desktops */
+@media screen and (min-width: 1200px) {
 }

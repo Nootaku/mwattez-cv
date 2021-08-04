@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Experience from "./experience";
 import experienceList from "./data/experiences.json";
+import pdfResume from "./data/mwattez_cv.pdf"
 
 class Experiences extends Component {
   state = {
@@ -14,7 +15,7 @@ class Experiences extends Component {
       <div>
         <p>
           Click{" "}
-          <a href="#">
+          <a href={pdfResume} download>
             <button className="downloadPDF">here</button>
           </a>{" "}
           to download a pdf-version of my CV.
