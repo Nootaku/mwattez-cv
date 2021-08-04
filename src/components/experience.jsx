@@ -41,7 +41,6 @@ class Experience extends Component {
 
   render() {
     const {
-      screen_width,
       isBodyHidden,
       id,
       title,
@@ -59,7 +58,7 @@ class Experience extends Component {
           dates={dates}
           onToggleBody={this.handleToggleBody}
         />
-        {!this.state.isBodyHidden && (
+        {!isBodyHidden && (
           <ExperienceBody
             id={id}
             company={company}
