@@ -55,24 +55,24 @@ class About extends Component {
     } else {
       return (
         <div className="row">
-          <div className="col-sm-3">
-            <div className="card mb-3">
-              <AboutCard title="Contact Information" type="contact" />
-            </div>
-            <div className="card mb-3">
-              <AboutCard title="Higher Education" type="education" />
-            </div>
-          </div>
           <div className="col-sm-9">
             <div className="card mb-3">
               <div className="card-body">
-                <AboutCard title="Professional Profile" type="profile" />
+                <AboutCard title="Presentation" type="profile" />
               </div>
             </div>
             <div className="card mb-3">
               <div className="card-body">
                 <AboutCard title="Who am I ?" type="whoami" />
               </div>
+            </div>
+          </div>
+          <div className="col-sm-3">
+            <div className="card mb-3">
+              <AboutCard title="Higher Education" type="education" />
+            </div>
+            <div className="card mb-3">
+              <AboutCard title="Contact Information" type="contact" />
             </div>
           </div>
         </div>

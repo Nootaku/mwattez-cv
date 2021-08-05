@@ -1,10 +1,6 @@
 .experience {
 }
 
-.experience .card-header {
-  background-color: #d0d3d6;
-}
-
 .experience-body {
   display: block;
 }
@@ -17,7 +13,6 @@
   font-style: italic;
   font-weight: bold;
 }
-
 
 /* Tablets */
 @media screen and (min-width: 768px) {

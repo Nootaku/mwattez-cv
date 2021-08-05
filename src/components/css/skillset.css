@@ -1,6 +1,3 @@
-.card-header {
-  background-color: #d0d3d6 !important;
-}
 .starred-item {
   display: flex !important;
   align-items: center;
@@ -8,4 +5,15 @@
 }
 .star {
   max-width: 18px;
+}
+
+.skillItem {
+  list-style: none;
+  display: inline;
+}
+.skillItem::after {
+  content: ", ";
+}
+.skillItem:last-child::after {
+  content: "";
 }

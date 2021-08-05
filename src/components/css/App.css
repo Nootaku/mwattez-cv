@@ -5,8 +5,7 @@
 }
 
 .App-logo {
-  display: none;
-  width: 150px;
+  max-width: 85px;
 }
 
 .App-header {
@@ -41,6 +40,20 @@
   color: #dddddd;
 }
 
+.underline {
+  text-decoration: underline;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+
+.card-header {
+  background-color: #d0d3d6 !important;
+}
+
 .footerDiv {
   display: flex;
   flex-direction: row;
@@ -56,20 +69,10 @@
   margin: auto 21px;
 }
 
-.underline {
-  text-decoration: underline;
-}
-.italic {
-  font-style: italic;
-}
-.bold {
-  font-weight: bold;
-}
-
 /* Tablets */
 @media screen and (min-width: 768px) {
   .App-logo {
-    display: block;
+    max-width: 150px;
   }
   .App-header {
     min-height: 200px;
