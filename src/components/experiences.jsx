@@ -15,7 +15,7 @@ class Experiences extends Component {
       <div>
         <ExperienceDownloadPdf />
         {experiences.reverse().map((xp) => (
-          <Experience key={xp.id} experience={xp} />
+          <Experience key={xp.id} experience={xp} isDesktop={this.props.lg} />
         ))}
       </div>
     );

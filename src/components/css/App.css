@@ -4,30 +4,26 @@
     url("./fonts/SomethingLooksNaturalRegular.otf") format("opentype");
 }
 
-.App-logo {
+/* HEADER */
+.appHeader {
+  background-color: #282c34;
+  min-height: 150px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.appLogo {
   max-width: 85px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 150px;
-  display: flex;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  justify-content: center;
-}
-
-.App-Title {
+.appTitle {
   font-family: titleFont;
 }
-.App-Title h2 {
+.appTitle h2 {
   font-size: calc(1rem + 0.9vw);
 }
 
-.App-content {
-}
-
+/* CONTENT */
 .downloadPDF {
   background-color: transparent;
   border: 1px solid #777777;
@@ -54,44 +50,31 @@
   background-color: #d0d3d6 !important;
 }
 
-.footerDiv {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: -1rem;
-  padding: 1rem;
-  font-size: 0.875em;
+/* FOOTER */
+.footer-div {
   color: #ededed;
   background-color: #4f596d;
-}
-.footerDiv p {
-  margin: auto 21px;
 }
 
 /* Tablets */
 @media screen and (min-width: 768px) {
-  .App-logo {
+  .appLogo {
     max-width: 150px;
   }
-  .App-header {
+  .appHeader {
     min-height: 200px;
   }
 }
 
 /* Laptops */
 @media screen and (min-width: 992px) {
-  .App-header {
+  .appHeader {
     min-height: 250px;
     max-height: 250px;
   }
 
-  .App-Title h2 {
+  .appTitle h2 {
     font-size: calc(1rem + 0.5vw);
-  }
-
-  .App-content {
-    margin: 3em auto;
   }
 }
 

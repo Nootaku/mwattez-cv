@@ -10,9 +10,13 @@ class Header extends Component {
     const { imgPath } = this.state;
     return (
       <React.Fragment>
-        <header className="App-header mx-auto">
-          <img src={imgPath} className="App-logo mx-5" alt="Profile" />
-          <div className="App-Title">
+        <header className="container-fluid  d-flex justify-content-start justify-content-sm-center align-items-center appHeader">
+          <img
+            src={imgPath}
+            className="ms-3 me-5 mx-sm-5 appLogo"
+            alt="Profile"
+          />
+          <div className="appTitle">
             <h1>Maxime WATTEZ</h1>
             <h2>Full Stack Software Developer</h2>
           </div>

@@ -4,33 +4,43 @@ import "./components/css/App.css";
 
 // Components
 import Header from "./components/header";
-import MainContent from "./components/mainContent";
 import About from "./components/about";
 import Experiences from "./components/experiences";
 import Skillset from "./components/skillset";
 import Footer from "./components/footer";
 
 class App extends Component {
-  state = {
-    mainContent: <About />
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isDesktop: window.innerWidth >= 992 ? true : false,
+      mainContent: "about",
+    };
+    this.updateScreenWidth = this.updateScreenWidth.bind(this);
+  }
 
-  handleChangeContent = contentValue => {
-    if (contentValue === "about") {
-      this.setState({ mainContent: <About /> });
-    } else if (contentValue === "experiences") {
-      this.setState({ mainContent: <Experiences /> });
-    } else if (contentValue === "skillset") {
-      this.setState({ mainContent: <Skillset /> });
-    }
+  componentDidMount() {
+    window.addEventListener("resize", this.updateScreenWidth);
+    this.updateScreenWidth();
+  }
+
+  updateScreenWidth() {
+    this.setState({ isDesktop: window.innerWidth >= 992 });
+  }
+
+  handleChangeContent = (contentValue) => {
+    this.setState({ mainContent: contentValue });
   };
 
   render() {
+    const { mainContent, isDesktop } = this.state;
     return (
       <React.Fragment>
         <Header imgPath={pic} onChangeContent={this.handleChangeContent} />
-        <main className="App-content container my-4">
-          <MainContent content={this.state.mainContent} />
+        <main className="container my-4">
+          {mainContent === "about" && <About lg={isDesktop} />}
+          {mainContent === "experiences" && <Experiences lg={isDesktop} />}
+          {mainContent === "skillset" && <Skillset lg={isDesktop} />}
         </main>
         <Footer />
       </React.Fragment>
