@@ -4,7 +4,7 @@ class ExperienceTitle extends Component {
   render() {
     return (
       <div
-        class="card-header d-lg-flex flex-row align-items-center experienceHeader"
+        className="card-header d-lg-flex flex-row align-items-center experienceHeader"
         onClick={() => this.props.onToggleBody()}
       >
         <h5 className="card-title">{this.props.title}</h5>

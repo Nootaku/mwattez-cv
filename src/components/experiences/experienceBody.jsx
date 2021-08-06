@@ -40,7 +40,12 @@ class ExperienceBody extends Component {
             className="btn btn-sm technicalStackOpenBtn"
             onClick={() => this.props.onToggleStack()}
           >
-            <img src={CodeSlash} className="codeSlash" /> View technical stack
+            <img
+              src={CodeSlash}
+              className="codeSlash"
+              alt="Open technical stack icon"
+            />{" "}
+            View technical stack
           </button>
         )}
       </div>
