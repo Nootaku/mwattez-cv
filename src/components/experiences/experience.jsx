@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ExperienceTitle from "./experienceTitle";
 import ExperienceBody from "./experienceBody";
+import ExperienceStack from "./experienceStack";
 import "../css/experience.css";
 
 class Experience extends Component {
@@ -9,7 +10,7 @@ class Experience extends Component {
     this.state = {
       screen_width: 0,
       isBodyHidden: !this.props.isDesktop,
-      isStackHidden: false,
+      isStackHidden: true,
       id: this.props.experience.id,
       title: this.props.experience.title,
       dates: this.props.experience.dates,
@@ -20,6 +21,7 @@ class Experience extends Component {
     };
 
     this.handleToggleBody = this.handleToggleBody.bind(this);
+    this.handleToggleStack = this.handleToggleStack.bind(this);
     this.updateView = this.updateView.bind(this);
   }
 
@@ -37,6 +39,10 @@ class Experience extends Component {
 
   handleToggleBody() {
     this.setState({ isBodyHidden: !this.state.isBodyHidden });
+  }
+
+  handleToggleStack() {
+    this.setState({ isStackHidden: !this.state.isStackHidden });
   }
 
   getIcon() {
@@ -74,6 +80,7 @@ class Experience extends Component {
   render() {
     const {
       isBodyHidden,
+      isStackHidden,
       id,
       title,
       dates,
@@ -98,6 +105,14 @@ class Experience extends Component {
             description={description}
             deliverables={deliverables}
             stack={stack}
+            onToggleStack={this.handleToggleStack}
+          />
+        )}
+        {!isStackHidden && stack && (
+          <ExperienceStack
+            id={id}
+            stack={stack}
+            onToggleStack={this.handleToggleStack}
           />
         )}
       </div>

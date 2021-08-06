@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Braces from "../images/braces.svg";
 
 class ExperienceBody extends Component {
   render() {
-    const {
-      id,
-      company,
-      description,
-      deliverables,
-      stack
-    } = this.props;
+    const { id, company, description, deliverables, stack } = this.props;
 
     return (
       <div className="card-body experience-body">
@@ -34,22 +29,16 @@ class ExperienceBody extends Component {
           </React.Fragment>
         )}
         {stack && (
-          <React.Fragment>
-            <h5 className="card-title">Technical stack:</h5>
-            <p>
-              {stack.map((item, index) => (
-                <span key={id + ".stack." + index}>
-                  {item}
-                  {item !== stack[stack.length - 1] && ", "}
-                </span>
-              ))}
-            </p>
-          </React.Fragment>
+          <button
+            className="btn btn-sm technicalStackOpenBtn"
+            onClick={() => this.props.onToggleStack()}
+          >
+            View technical stack <img src={Braces} />
+          </button>
         )}
       </div>
     );
   }
-
 }
 
 export default ExperienceBody;
