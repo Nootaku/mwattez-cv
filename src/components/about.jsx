@@ -14,7 +14,7 @@ class About extends Component {
         <div className="row">
           <div className="col-sm-3">
             <div className="card mb-3">
-              <AboutCard title="Higher Education" type="education" />
+              <AboutCard title="Education" type="education" />
             </div>
           </div>
           <div className="col-sm-9">
