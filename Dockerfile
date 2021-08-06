@@ -1,6 +1,9 @@
 # Base image
 FROM nginx:stable-alpine
 
+# Labels
+LABEL org.opencontainers.image.source https://github.com/nootaku/mwattez-cv
+
 # Create new group and user (with UID = 1000)
 # +---------------------------------------------------------------+
 # |    Adduser / Addgroup options:                                |
