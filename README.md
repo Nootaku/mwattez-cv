@@ -13,6 +13,10 @@ This will set up a development environment.
 git clone https://github.com/Nootaku/mwattez-cv.git
 cd mwattez-cv
 npm install
+
+# if necessary fix vulnerabilities
+npm audit fix
+
 npm start
 ```
 
@@ -21,5 +25,6 @@ npm start
 ## Build production environment
 
 ```bash
-npm build
+npm run build
+serve -s build
 ```

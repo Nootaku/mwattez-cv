@@ -70,6 +70,9 @@
     padding: 1rem !important;
   }
 
+  .experienceHeader .card-subtitle {
+    margin-top: 0 !important;
+  }
   .experienceHeader .card-subtitle::before {
     content: "| ";
     margin: 0 1rem 0 0;
