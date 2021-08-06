@@ -22,7 +22,7 @@ class About extends Component {
               <AboutCard title="Professional Profile" type="profile" />
             </div>
             <div className="card mb-3">
-              <AboutCard title="Who am I ?" type="whoami" />
+              <AboutCard title="About Me" type="whoami" />
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ class About extends Component {
           </div>
           <div className="card mb-3">
             <div className="card-body">
-              <AboutCard title="Who am I ?" type="whoami" />
+              <AboutCard title="About Me" type="whoami" />
             </div>
           </div>
         </div>

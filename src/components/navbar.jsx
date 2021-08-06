@@ -35,7 +35,7 @@ const Navbar = (props) => (
               window.location =
                 "mailto:max.wattez@protonmail.com?subject=JOB: <YourCompany> <OfferedPosition>";
             }}
-            className="nav-button"
+            className="nav-button sendMailBtn"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

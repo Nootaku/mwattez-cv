@@ -1,17 +1,20 @@
 .experience {
 }
+.downloadWrapper {
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.downloadText {
+  margin: 8px 0 0 0;
+}
 
 .experience-body {
   display: block;
 }
-.experience-title-dates::before {
-  content: "\A";
-  white-space: pre;
-}
-.card-title {
-  font-size: 18px;
-  font-style: italic;
-  font-weight: bold;
+
+.card-title .blockquote-footer::before {
+  content: "";
 }
 
 .technicalStack {
@@ -23,6 +26,7 @@
   width: 100%;
 }
 .technicalStackOpenBtn {
+  width: 100%;
   background-color: #d0d3d6 !important;
   transition: 0.3s;
 }
@@ -31,6 +35,11 @@
   background-color: #4f596d !important;
   color: #ededed !important;
 }
+
+.technicalStackOpenBtn:hover .codeSlash {
+  fill: #ededed !important;
+}
+
 .technicalStackCloseBtn {
   position: absolute;
   top: 13px;
@@ -39,15 +48,31 @@
 
 /* Tablets */
 @media screen and (min-width: 768px) {
+  .technicalStackOpenBtn {
+    max-width: 250px;
+    display: block !important;
+    margin: auto;
+  }
 }
 
 /* Laptops */
 @media screen and (min-width: 992px) {
-  .experience-body {
-    display: block;
+  .toggleHelp {
+    display: none;
   }
-  .experience-title-dates::before {
-    content: " | ";
+
+  .experienceHeader .card-title,
+  .experience-body {
+    margin: 0 1rem;
+  }
+
+  .experienceHeader {
+    padding: 1rem !important;
+  }
+
+  .experienceHeader .card-subtitle::before {
+    content: "| ";
+    margin: 0 1rem 0 0;
   }
 }
 

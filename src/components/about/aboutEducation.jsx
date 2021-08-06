@@ -6,16 +6,18 @@ const AboutEducation = (props) => {
 
   let uniBody = (contentKey) => {
     return (
-      <React.Fragment key={"uni_" + contentKey}>
-        <h5 className="smallTitle">
-          <span className="underline italic">{contentKey}</span> -{" "}
+      <div className="educationWrapper" key={"uni_" + contentKey}>
+        <blockquote className="blockquote mb-0 educationElement">
+          <p className="educationHeader">{contentKey}</p>
+        </blockquote>
+        <p className="card-text-content">
           {props.content.university[contentKey].name}
-        </h5>
-        <p className="card-text-content italic">
+        </p>
+        <p className="card-text-content text-muted">
           {props.content.university[contentKey].university},{" "}
           {props.content.university[contentKey].year}
         </p>
-      </React.Fragment>
+      </div>
     );
   };
 
@@ -25,13 +27,15 @@ const AboutEducation = (props) => {
       other: "Language Classes",
     };
     return (
-      <React.Fragment key={"nonUni_" + contentKey}>
-        <h5 className="smallTitle underline italic">{title[contentKey]}</h5>
+      <div className="educationWrapper" key={"nonUni_" + contentKey}>
+        <blockquote className="blockquote mb-0 educationElement">
+          <p className="educationHeader">{title[contentKey]}</p>
+        </blockquote>
         <ul className="aboutCardList">
           {props.content.non_univerity[contentKey].map((i) => (
             <li key={i.id} className="aboutCardListItem">
-              <span className="bold">{i.university}</span>
-              <span className="dates italic">
+              <p className="card-text-content">{i.university}</p>
+              <p className="card-text-content text-muted">
                 {i.start}
                 {!(i.start === i.end) && (
                   <React.Fragment>
@@ -40,11 +44,11 @@ const AboutEducation = (props) => {
                   </React.Fragment>
                 )}{" "}
                 ({i.duration})
-              </span>
+              </p>
             </li>
           ))}
         </ul>
-      </React.Fragment>
+      </div>
     );
   };
   return (

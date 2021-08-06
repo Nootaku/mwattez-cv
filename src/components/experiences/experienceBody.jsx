@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Braces from "../images/braces.svg";
+import CodeSlash from "../images/code-slash.svg";
 
 class ExperienceBody extends Component {
   render() {
@@ -7,7 +7,14 @@ class ExperienceBody extends Component {
 
     return (
       <div className="card-body experience-body">
-        <h5 className="card-title">{company}</h5>
+        <figure className="card-title">
+          <blockquote className="blockquote">
+            <p>{company[0]}</p>
+          </blockquote>
+          {company[1] && (
+            <figcaption className="blockquote-footer">{company[1]}</figcaption>
+          )}
+        </figure>
         <p className="card-text">{description}</p>
         {deliverables && (
           <React.Fragment>
@@ -33,7 +40,7 @@ class ExperienceBody extends Component {
             className="btn btn-sm technicalStackOpenBtn"
             onClick={() => this.props.onToggleStack()}
           >
-            View technical stack <img src={Braces} />
+            <img src={CodeSlash} className="codeSlash" /> View technical stack
           </button>
         )}
       </div>

@@ -8,27 +8,34 @@
   width: auto;
 }
 
-.smallTitle {
-  font-size: 16px;
-  padding-left: 1rem;
-  font-weight: bold;
+.educationWrapper {
+  margin-bottom: 13px;
+}
+
+.educationElement {
+  padding-left: 0.5rem;
+}
+
+.educationHeader {
   text-transform: capitalize;
-  margin-bottom: 0;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.educationElement .blockquote-footer::before {
+  content: "";
 }
 
 .card-text-content {
+  margin: 0;
   padding-left: 1rem;
 }
 
 .aboutCardList {
+  padding-left: 0;
   list-style: none;
 }
 
 .aboutCardListItem {
   margin-bottom: 8px;
-}
-
-.aboutCardListItem .dates::before {
-  content: "\A";
-  white-space: pre;
 }
