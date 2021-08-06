@@ -1,19 +1,31 @@
 # Base image
-FROM node:lts-alpine3.14
+FROM nginx:stable-alpine
 
+# Create new group and user (with UID = 1000)
+# +---------------------------------------------------------------+
+# |    Adduser / Addgroup options:                                |
+# |        -S = Create system user or group                       |
+# |        -D = Don't assign a password                           |
+# |        -u = User ID of new account                            |
+# |        -g = ID of group or user                               |
+# |        -G = Add to group                                      |
+# |                                                               |
+# |    Chown options:                                             |
+# |        -h = Work on symbolic link instead of reference file   |
+# |        -R = Recursive                                         |
+# |                                                               |
+# |    Full commands:                                             |
+# |        addgroup -S -g <groupid> <groupname>                   |
+# |        useradd -S -D -u <userid> -G <groupname> <username>    |
+# +---------------------------------------------------------------+
 
-# Add `/node_modules/.bin` to $PATH
-ENV PATH /node_modules/.bin:$PATH
+ARG USERNAME=www-data
+ARG UID=1000
 
+RUN adduser -S -D -u ${UID} -G ${USERNAME} ${USERNAME} && chown -hR ${USERNAME}:${USERNAME} /usr/share/nginx/*
 
-# Install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install --silent
+# Set working directory to nginx resources directory and remove default resources
+WORKDIR /usr/share/nginx/html
 
-
-# add app
-COPY . ./
-
-# start app
-CMD ["npm", "start"]
+# Copy the builded app to the image
+COPY ./build .
