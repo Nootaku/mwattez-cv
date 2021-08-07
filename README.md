@@ -30,3 +30,12 @@ npm start
 npm run build
 serve -s build
 ```
+
+## Pull image on production server
+```bash
+TAG="someExample:foo"
+docker pull ghcr.io/nootaku/mwattez-cv/$TAG
+
+# Once pulled run the container like you would with any other image
+docker run <pulledImage>
+```
