@@ -7,6 +7,7 @@ import Header from "./components/header";
 import About from "./components/about";
 import Experiences from "./components/experiences";
 import Skillset from "./components/skillset";
+import Email from "./components/email";
 import Footer from "./components/footer";
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
       mainContent: "about",
     };
     this.updateScreenWidth = this.updateScreenWidth.bind(this);
+    this.handleChangeContent = this.handleChangeContent.bind(this);
   }
 
   componentDidMount() {
@@ -28,9 +30,9 @@ class App extends Component {
     this.setState({ isDesktop: window.innerWidth >= 992 });
   }
 
-  handleChangeContent = (contentValue) => {
+  handleChangeContent(contentValue) {
     this.setState({ mainContent: contentValue });
-  };
+  }
 
   render() {
     const { mainContent, isDesktop } = this.state;
@@ -41,6 +43,7 @@ class App extends Component {
           {mainContent === "about" && <About lg={isDesktop} />}
           {mainContent === "experiences" && <Experiences lg={isDesktop} />}
           {mainContent === "skillset" && <Skillset lg={isDesktop} />}
+          {mainContent === "email" && <Email />}
         </main>
         <Footer />
       </React.Fragment>

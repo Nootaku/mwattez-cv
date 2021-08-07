@@ -31,10 +31,7 @@ const Navbar = (props) => (
         </li>
         <li className="nav-item">
           <button
-            onClick={() => {
-              window.location =
-                "mailto:max.wattez@protonmail.com?subject=JOB: <YourCompany> <OfferedPosition>";
-            }}
+            onClick={() => props.onChangeContent("email")}
             className="nav-button sendMailBtn"
           >
             <svg

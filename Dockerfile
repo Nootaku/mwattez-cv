@@ -29,3 +29,5 @@ WORKDIR /usr/share/nginx/html
 
 # Copy the builded app to the image
 COPY ./build .
+
+USER www-data
