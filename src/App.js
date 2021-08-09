@@ -45,7 +45,7 @@ class App extends Component {
           {mainContent === "skillset" && <Skillset lg={isDesktop} />}
           {mainContent === "email" && <Email />}
         </main>
-        <Footer />
+        <Footer onChangeContent={this.handleChangeContent} />
       </React.Fragment>
     );
   }
