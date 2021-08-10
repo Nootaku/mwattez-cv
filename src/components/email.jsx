@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-// https://mailtrap.io/blog/react-contact-form/
-
 class Email extends Component {
   constructor(props) {
     super(props);
@@ -46,14 +44,19 @@ class Email extends Component {
       return null;
     }
 
-    fetch("http://localhost:3002/send", {
-      method: "POST",
-      body: JSON.stringify(this.state),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    })
+    fetch(
+      process.env.NODE_ENV === "production"
+        ? process.env.REACT_APP_MAILSERVER_URL
+        : "http://localhost:3002/send",
+      {
+        method: "POST",
+        body: JSON.stringify(this.state),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then((response) => response.json())
       .then((response) => {
         if (response.status === 200) {
@@ -66,7 +69,13 @@ class Email extends Component {
   }
 
   resetForm() {
-    this.setState({ name: "", company: "", email: "", message: "" });
+    this.setState({
+      name: "",
+      company: "",
+      email: "",
+      message: "",
+      isRobot: true,
+    });
   }
 
   render() {

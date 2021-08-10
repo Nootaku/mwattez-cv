@@ -2,7 +2,6 @@ import React from "react";
 import AboutEducation from "./aboutEducation";
 import AboutProfile from "./aboutProfile";
 import AboutWhoami from "./aboutWhoami";
-import AboutContact from "./aboutContact";
 import aboutData from "../data/about.json";
 
 // Stateless Functional Component
@@ -11,7 +10,6 @@ const AboutCard = (props) => {
     education: <AboutEducation content={aboutData.education} />,
     profile: <AboutProfile content={aboutData.professional_profile} />,
     whoami: <AboutWhoami content={aboutData.whoami} />,
-    contact: <AboutContact />,
   };
 
   let buildTile = (contentKey) => {
