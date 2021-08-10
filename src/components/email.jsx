@@ -71,13 +71,13 @@ class Email extends Component {
 
   render() {
     return (
-      <div className="formWrapper">
-        <form
-          id="contact-form"
-          onSubmit={this.handleSubmit.bind(this)}
-          method="POST"
-        >
-          <div className="form-group my-3">
+      <form
+        id="contact-form"
+        onSubmit={this.handleSubmit.bind(this)}
+        method="POST"
+      >
+        <div className="row g-3 mb-3 align-items-center">
+          <div className="col-lg">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -86,7 +86,7 @@ class Email extends Component {
               onChange={this.onNameChange.bind(this)}
             />
           </div>
-          <div className="form-group my-3">
+          <div className="col-lg">
             <label htmlFor="company">Company</label>
             <input
               type="text"
@@ -95,7 +95,9 @@ class Email extends Component {
               onChange={this.onCompanyChange.bind(this)}
             />
           </div>
-          <div className="form-group my-3">
+        </div>
+        <div className="row g-3 mb-3 align-items-start">
+          <div className="col-lg">
             <label htmlFor="exampleInputEmail1">Email address</label>
             <input
               type="email"
@@ -109,7 +111,7 @@ class Email extends Component {
               to your message.
             </div>
           </div>
-          <div className="form-group my-3">
+          <div className="col-lg">
             <label htmlFor="message">Message</label>
             <textarea
               className="form-control"
@@ -118,7 +120,9 @@ class Email extends Component {
               onChange={this.onMessageChange.bind(this)}
             />
           </div>
-          <div className="form-group my-3 row g-3 align-items-center">
+        </div>
+        <div className="row g-3 mb-3 align-items-center">
+          <div className="col-lg form-group my-3 row g-3 align-items-center">
             <div className="col-auto">
               <label htmlFor="robot" className="col-form-label">
                 Anti-spam
@@ -138,15 +142,13 @@ class Email extends Component {
               </span>
             </div>
           </div>
-          <div className="d-flex justify-content-center justify-content-md-start">
-            <div class="d-grid col-12 col-md-4">
-              <button type="submit" className="btn btn-outline-secondary ">
-                Submit
-              </button>
-            </div>
+          <div className="w-100 col-lg">
+            <button type="submit" className="btn btn-outline-secondary w-100">
+              Submit
+            </button>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     );
   }
 }

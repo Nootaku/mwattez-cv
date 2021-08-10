@@ -54,9 +54,17 @@
 .footer-div {
   color: #ededed;
   background-color: #4f596d;
+  position: relative;
+  bottom: 0;
 }
 .footerSendMailBtn {
   background-color: #eff0f1 !important;
+  border: none !important;
+  color: #545454 !important;
+}
+.footerSendMailBtn:hover {
+  background-color: #6c757d !important;
+  color: #fff !important;
 }
 .footerSendMailBtn svg {
   margin-left: 5px;

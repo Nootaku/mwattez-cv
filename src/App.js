@@ -38,13 +38,15 @@ class App extends Component {
     const { mainContent, isDesktop } = this.state;
     return (
       <React.Fragment>
-        <Header imgPath={pic} onChangeContent={this.handleChangeContent} />
-        <main className="container my-4">
-          {mainContent === "about" && <About lg={isDesktop} />}
-          {mainContent === "experiences" && <Experiences lg={isDesktop} />}
-          {mainContent === "skillset" && <Skillset lg={isDesktop} />}
-          {mainContent === "email" && <Email />}
-        </main>
+        <div className="contentWrapper">
+          <Header imgPath={pic} onChangeContent={this.handleChangeContent} />
+          <main className="container my-4">
+            {mainContent === "about" && <About lg={isDesktop} />}
+            {mainContent === "experiences" && <Experiences lg={isDesktop} />}
+            {mainContent === "skillset" && <Skillset lg={isDesktop} />}
+            {mainContent === "email" && <Email />}
+          </main>
+        </div>
         <Footer onChangeContent={this.handleChangeContent} />
       </React.Fragment>
     );

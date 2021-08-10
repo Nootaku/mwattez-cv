@@ -5,7 +5,7 @@ const Footer = (props) => (
       <div className="col justify-content-center mb-3">
         <button
           onClick={() => props.onChangeContent("email")}
-          className="btn footerSendMailBtn"
+          className="btn btn-outline-secondary footerSendMailBtn"
         >
           {"Contact me: "}
           <svg
