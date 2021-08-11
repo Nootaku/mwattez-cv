@@ -10,11 +10,12 @@ class Experiences extends Component {
 
   render() {
     const { experiences } = this.state;
+    const xps = experiences[0].id === 1 ? experiences.reverse() : experiences;
 
     return (
       <div>
         <ExperienceDownloadPdf />
-        {experiences.reverse().map((xp) => (
+        {xps.map((xp) => (
           <Experience key={xp.id} experience={xp} isDesktop={this.props.lg} />
         ))}
       </div>

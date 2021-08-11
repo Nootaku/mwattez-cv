@@ -44,7 +44,7 @@ class About extends Component {
           </div>
           <div className="col-md-4">
             <div className="card mb-3">
-              <AboutCard title="Higher Education" type="education" />
+              <AboutCard title="Education" type="education" />
             </div>
           </div>
         </div>

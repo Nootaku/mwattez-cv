@@ -29,3 +29,4 @@ yarn-error.log*
 
 # docker archive
 docker_archive
+deploy.sh
