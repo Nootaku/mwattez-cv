@@ -1,5 +1,5 @@
 # Base image
-FROM nginx:stable-alpine as reactApp
+FROM nginx:stable-alpine
 
 # Labels
 LABEL org.opencontainers.image.source https://github.com/nootaku/mwattez-cv
