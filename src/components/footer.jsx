@@ -23,7 +23,7 @@ const Footer = (props) => (
     </div>
     <div className="row row-cols-auto justify-content-center">
       <div className="col gx-5">
-        <small>Last updated: August 2021</small>
+        <small>Last updated: January 2022</small>
       </div>
       <div className="col gx-5">
         <small>Created with React</small>
