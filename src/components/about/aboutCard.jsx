@@ -1,5 +1,6 @@
 import React from "react";
 import AboutEducation from "./aboutEducation";
+import AboutCertificates from "./aboutCertificates";
 import AboutProfile from "./aboutProfile";
 import AboutWhoami from "./aboutWhoami";
 import aboutData from "../data/about.json";
@@ -8,6 +9,7 @@ import aboutData from "../data/about.json";
 const AboutCard = (props) => {
   const tiles = {
     education: <AboutEducation content={aboutData.education} />,
+    certificates: <AboutCertificates content={aboutData.certificates} />,
     profile: <AboutProfile content={aboutData.professional_profile} />,
     whoami: <AboutWhoami content={aboutData.whoami} />,
   };

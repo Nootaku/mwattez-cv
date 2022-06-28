@@ -16,6 +16,9 @@ class About extends Component {
             <div className="card mb-3">
               <AboutCard title="Education" type="education" />
             </div>
+            <div className="card mb-3">
+              <AboutCard title="Certificates" type="certificates" />
+            </div>
           </div>
           <div className="col-sm-9">
             <div className="card mb-3">
@@ -46,6 +49,9 @@ class About extends Component {
             <div className="card mb-3">
               <AboutCard title="Education" type="education" />
             </div>
+            <div className="card mb-3">
+              <AboutCard title="Certificates" type="certificates" />
+            </div>
           </div>
         </div>
       );
@@ -70,6 +76,9 @@ class About extends Component {
         <div className="col-lg-4">
           <div className="card mb-3">
             <AboutCard title="Higher Education" type="education" />
+          </div>
+          <div className="card mb-3">
+            <AboutCard title="Certificates" type="certificates" />
           </div>
         </div>
       </div>

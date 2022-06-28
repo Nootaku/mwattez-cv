@@ -8,7 +8,8 @@
   width: auto;
 }
 
-.educationWrapper {
+.educationWrapper,
+.certificateWrapper {
   margin-bottom: 13px;
 }
 
@@ -38,4 +39,8 @@
 
 .aboutCardListItem {
   margin-bottom: 8px;
+}
+
+.cert_logo {
+  width: 65px;
 }
